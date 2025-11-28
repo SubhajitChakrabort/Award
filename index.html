@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Award Presentation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-50">
+    <!-- Header with Logos -->
+    <header class="container mx-auto px-4 py-8 bg-white shadow-sm">
+        <div class="flex flex-col md:flex-row items-center justify-between gap-8">
+            <!-- Logo 1: Government of India -->
+            <div class="w-full md:w-1/3 flex justify-center md:justify-start">
+                <img src="https://www.eepcindia.org/assets/logo-left-DZiXnnWj.png" 
+                     alt="Government of India" 
+                     class="h-24 object-contain">
+            </div>
+            
+            <!-- Logo 2: Indian Engineering Association -->
+            <div class="w-full md:w-1/3 flex justify-center">
+                <img src="data:image/jpeg;base64,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" 
+                     alt="Indian Engineering Association" 
+                     class="h-24 object-contain bg-white p-2 rounded">
+            </div>
+            
+            <!-- Logo 3: EPIC India -->
+            <div class="w-full md:w-1/3 flex justify-center md:justify-end">
+                <img src="https://www.eepcindia.org/assets/70_year_logo-r-D8wYGRFD.png" 
+                     alt="EPIC India" 
+                     class="h-24 object-contain">
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="bg-sky-600 text-white shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center">
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button class="mobile-menu-button p-2 focus:outline-none">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-4">
+                    <a href="#" class="py-4 px-3 text-white hover:bg-sky-700 transition duration-300 font-bold">About Us</a>
+                    <a href="#" class="py-4 px-3 text-white hover:bg-sky-700 transition duration-300 font-bold">For Indians</a>
+                    <a href="#" class="py-4 px-3 text-white hover:bg-sky-700 transition duration-300 font-bold">For Internationals</a>
+                    <a href="#" class="py-4 px-3 text-white hover:bg-sky-700 transition duration-300 font-bold">Members</a>
+                    <a href="#" class="py-4 px-3 text-white hover:bg-sky-700 transition duration-300 font-bold">Policy Info</a>
+                    <a href="#" class="py-4 px-3 text-white hover:bg-sky-700 transition duration-300 font-bold">Resources</a>
+                    <a href="#" class="py-4 px-3 text-white hover:bg-sky-700 transition duration-300 font-bold">Publications</a>
+                    <a href="#" class="py-4 px-3 text-white hover:bg-sky-700 transition duration-300 font-bold">Events</a>
+                    <a href="#" class="py-4 px-3 text-white hover:bg-sky-700 transition duration-300 font-bold">Important Links</a>
+                </div>
+                
+                <!-- Home/Phone -->
+                <div class="flex items-center space-x-2">
+
+                    <a href="#" class="p-2 text-white hover:bg-sky-700 rounded-full transition duration-300">
+                        <i class="fas fa-phone-alt"></i>
+                    </a>
+                    <a href="#" class="p-2 text-white hover:bg-sky-700 rounded-full transition duration-300">
+                        <i class="fas fa-home"></i>
+                    </a>
+
+                    <a href="#" class="p-2 text-white hover:bg-sky-700 rounded-full transition duration-300">
+                        <i class="fas fa-user"></i>
+                    </a>
+                </div>
+            </div>
+        
+            <!-- Mobile Menu (hidden by default) -->
+            <div class="mobile-menu hidden md:hidden">
+                <a href="#" class="block py-3 px-6 text-white hover:bg-sky-700 font-bold">About Us</a>
+                <a href="#" class="block py-3 px-6 text-white hover:bg-sky-700 font-bold">For Indians</a>
+                <a href="#" class="block py-3 px-6 text-white hover:bg-sky-700 font-bold">For Internationals</a>
+                <a href="#" class="block py-3 px-6 text-white hover:bg-sky-700 font-bold">Members</a>
+                <a href="#" class="block py-3 px-6 text-white hover:bg-sky-700 font-bold">Policy Info</a>
+                <a href="#" class="block py-3 px-6 text-white hover:bg-sky-700 font-bold">Resources</a>
+                <a href="#" class="block py-3 px-6 text-white hover:bg-sky-700 font-bold">Publications</a>
+                <a href="#" class="block py-3 px-6 text-white hover:bg-sky-700 font-bold">Events</a>
+                <a href="#" class="block py-3 px-6 text-white hover:bg-sky-700 font-bold">Important Links</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="bg-blue-900 pt-8" style="max-height: 200px;">
+        <div class="container mx-auto px-4 py-2">
+            <div class="text-center">
+                <h1 class="text-2xl md:text-4xl font-semibold text-white mb-2">Award Presentation</h1>
+            </div>
+        </div>
+    </main>
+
+    <!-- Main Content Section -->
+    <section class="container mx-auto px-4 py-6">
+        <!-- Go Back Button - Matches sidebar width -->
+        <div class="flex flex-col md:flex-row gap-8">
+            <div class="w-full md:w-64">
+                <button onclick="window.history.back()" class="w-full bg-blue-900 text-white py-4 px-6 rounded-lg hover:bg-blue-800 transition duration-300 font-medium flex items-center justify-center h-16">
+                    <i class="fas fa-arrow-left mr-3 text-xl"></i>
+                    <span class="text-lg">Go Back</span>
+                </button>
+            </div>
+            <div class="flex-1"></div> <!-- This empty div pushes the content to the right -->
+        </div>
+
+        <div class="flex flex-col md:flex-row gap-8 mt-6 items-start">
+            <!-- Sidebar -->
+            <aside class="w-full md:w-64">
+                <div class="bg-blue-900 text-white rounded-lg shadow-lg">
+                <div class="p-6">
+                    <div class="mb-6">
+                        <h2 class="text-xl font-bold text-white">Events</h2>
+                    </div>
+                    <ul class="space-y-2">
+                        <li>
+                            <a href="#" class="block px-4 py-3 rounded transition duration-300 hover:bg-sky-200 hover:text-blue-900 hover:font-bold">
+                                Forthcoming Events
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="block px-4 py-3 rounded transition duration-300 hover:bg-sky-200 hover:text-blue-900 hover:font-bold">
+                                Past Events
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="block px-4 py-3 rounded transition duration-300 hover:bg-sky-200 hover:text-blue-900 hover:font-bold">
+                                India Exhibition
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="block px-4 py-3 rounded transition duration-300 hover:bg-sky-200 hover:text-blue-900 hover:font-bold">
+                                IESS
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="block px-4 py-3 rounded transition duration-300 hover:bg-sky-200 hover:text-blue-900 hover:font-bold">
+                                Award Presentations
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="block px-4 py-3 rounded transition duration-300 hover:bg-sky-200 hover:text-blue-900 hover:font-bold">
+                                Webinars/Seminars
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="block px-4 py-3 rounded transition duration-300 hover:bg-sky-200 hover:text-blue-900 hover:font-bold">
+                                Past Webinars/Seminars
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="block px-4 py-3 rounded transition duration-300 hover:bg-sky-200 hover:text-blue-900 hover:font-bold">
+                                Other Events
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- This empty div with the same background will ensure the background extends to the bottom -->
+                <div class="bg-blue-900 rounded-b-lg h-full"></div>
+            </div>
+            </aside>
+
+            <!-- Main Content Area -->
+            <div class="flex-1 bg-white p-6 rounded-lg shadow-md min-h-[500px] ml-0 md:ml-6" id="award-content">
+                <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-6 gap-4">
+                    <h2 class="text-2xl font-bold text-blue-900">Archive of Past Award Presentations</h2>
+                    <div class="relative w-full md:w-64">
+                        <input type="text" id="awardSearch" placeholder="Search awards..." class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        <i class="fas fa-search absolute right-3 top-3 text-gray-400"></i>
+                    </div>
+                </div>
+                <div id="tables-container"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- Left Section - Logo and Contact -->
+                <div class="col-span-1 md:col-span-1">
+                    <!-- 70 Year Logo -->
+                    <img src="https://www.eepcindia.org/assets/70_year_logo-r-D8wYGRFD.png" 
+                         alt="EEPC India 70 Years" 
+                         class="h-20 object-contain mb-4">
+                    
+                    <!-- Address -->
+                    <div class="text-sm text-gray-300 mb-4">
+                        <p class="mb-2">'Vanijya Bhawan', 1st Floor</p>
+                        <p class="mb-2">International Trade Facilitation Centre</p>
+                        <p class="mb-2">1/1, Wood Street</p>
+                        <p class="mb-2">Kolkata 700016</p>
+                    </div>
+                    
+                    <!-- Contact Info -->
+                    <div class="space-y-2 mb-4">
+                        <div class="flex items-center">
+                            <i class="fas fa-phone text-blue-600 mr-2"></i>
+                            <span class="text-sm">(+91 33) 22890651/52</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-envelope text-blue-600 mr-2"></i>
+                            <span class="text-sm">eepcho@eepcindia.net</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Social Media Icons -->
+                    <div class="flex space-x-3">
+                        <a href="#" class="w-8 h-8 bg-white rounded-full flex items-center justify-center hover:bg-gray-200 transition duration-300">
+                            <i class="fab fa-facebook-f text-black text-sm"></i>
+                        </a>
+                        <a href="#" class="w-8 h-8 bg-white rounded-full flex items-center justify-center hover:bg-gray-200 transition duration-300">
+                            <i class="fab fa-twitter text-black text-sm"></i>
+                        </a>
+                        <a href="#" class="w-8 h-8 bg-white rounded-full flex items-center justify-center hover:bg-gray-200 transition duration-300">
+                            <i class="fab fa-linkedin-in text-black text-sm"></i>
+                        </a>
+                        <a href="#" class="w-8 h-8 bg-white rounded-full flex items-center justify-center hover:bg-gray-200 transition duration-300">
+                            <i class="fab fa-instagram text-black text-sm"></i>
+                        </a>
+                        <a href="#" class="w-8 h-8 bg-white rounded-full flex items-center justify-center hover:bg-gray-200 transition duration-300">
+                            <i class="fab fa-youtube text-black text-sm"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Quick Links Section -->
+                <div>
+                    <h4 class="text-blue-600 font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-white hover:text-gray-300 transition duration-300">Home</a></li>
+                        <li><a href="#" class="text-white hover:text-gray-300 transition duration-300">Sitemap</a></li>
+                        <li><a href="#" class="text-white hover:text-gray-300 transition duration-300">Career</a></li>
+                        <li><a href="#" class="text-white hover:text-gray-300 transition duration-300">Publications</a></li>
+                        <li><a href="#" class="text-white hover:text-gray-300 transition duration-300">Contact us</a></li>
+                        <li><a href="#" class="text-white hover:text-gray-300 transition duration-300">Get in touch with us</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Resources Section -->
+                <div>
+                    <h4 class="text-blue-600 font-bold mb-4">Resources</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-white hover:text-gray-300 transition duration-300">Media Room</a></li>
+                        <li><a href="#" class="text-white hover:text-gray-300 transition duration-300">Photo Gallery</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Legal Section -->
+                <div>
+                    <h4 class="text-blue-600 font-bold mb-4">Legal</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-white hover:text-gray-300 transition duration-300">Terms of Use</a></li>
+                        <li><a href="#" class="text-white hover:text-gray-300 transition duration-300">Privacy Policy</a></li>
+                        <li><a href="#" class="text-white hover:text-gray-300 transition duration-300">Disclaimer</a></li>
+                        <li><a href="#" class="text-white hover:text-gray-300 transition duration-300">Refund and Cancellation Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Bottom Footer with HR and Copyright -->
+            <div class="mt-8 pt-6">
+                <hr class="border-gray-800 mb-4">
+                <div class="text-center">
+                    <p class="text-gray-400 text-sm">&copy; 2024 EEPC INDIA. All rights reserved</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTop" class="fixed bottom-8 right-8 bg-blue-900 text-white w-12 h-12 rounded-full shadow-lg flex items-center justify-center opacity-0 invisible transition-all duration-300 hover:bg-blue-800">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
